@@ -6,7 +6,7 @@ from reliability.Fitters import Fit_Everything
 
 # Path = "sample-data.csv"
 Path = "data-real.csv"
-df = pd.read_csv(Path, delimiter=";")
+df = pd.read_csv(Path)
 
 # print(df.head())
 # print(df.describe())
