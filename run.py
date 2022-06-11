@@ -77,3 +77,14 @@ for i in range(len(df.columns)):
         reliabilities.append(component_reliability)
 
         print("\n--------------------------------------------------------------------------------------------------------------------\n")
+
+# Calculate the system reliability
+system_reliability = np.prod(reliabilities)
+
+# Print system reliability result
+print(f"RESULTS:\n\nSystem Reliability for {len(df.columns)} components in series: {round(system_reliability*100,2)}%")
+print("")
+
+# Print system components individual reliabilities
+for i in range(len(reliabilities)):
+    print(f"Reliability of {df.columns[i]} at time {times[i]}: {round(reliabilities[i]*100,2)}%")
