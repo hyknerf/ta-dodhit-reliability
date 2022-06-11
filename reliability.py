@@ -1,11 +1,11 @@
 import path
 import numpy as np
 import pandas as pd
-import relialibity
+import reliability
 from reliability.Fitters import Fit_Everything
 
 # Path = "sample-data.csv"
-Path = "data-real.csv"
+Path = "data-real-2.csv"
 df = pd.read_csv(Path)
 
 # print(df.head())
